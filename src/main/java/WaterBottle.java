@@ -1,9 +1,17 @@
 public class WaterBottle {
 
-    private int volume;
+    private static int volume;
+//    private int volume;
 
     public WaterBottle(int volume) {
         this.volume = 100;
+    }
+
+    public static void emptyBottle() {
+        if (volume > 0){
+            volume = 0;
+        }
+
     }
 
     public int getVolume() {
